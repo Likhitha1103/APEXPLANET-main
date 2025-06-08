@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Functionalities</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to My Simple Webpage</h1>
-    <p>This is a sample paragraph to demonstrate basic HTML structure.</p>
-    <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?fm=jpg&q" alt="Random Image" height="100px" width="100px">
-    <p>Visit <a href="https://www.example.com" target="_blank">Example.com</a> for more info.</p>
-    <button id="alertBtn">Click Me!</button>
+    <nav class="navbar">
+        <h1>Web Functionalities Demo</h1>
+    </nav>
+    <div class="container">
+        <!-- HTML Section -->
+        <section id="html-section">
+            <h2>HTML Elements Demo</h2>
+            <div class="demo-box">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format"
+                        alt="HTML Code" class="demo-image">
+                </div>
+                <h3>Text Elements</h3>
+                <p>This is a paragraph with modern styling and typography</p>
+                <strong>This is bold text with emphasis</strong>
+                <em>This is elegantly italicized text</em>
+
+                <h3>Lists with Icons</h3>
+                <ul>
+                    <li>Unordered list item 1</li>
+                    <li>Unordered list item 2</li>
+                </ul>
+                <ol>
+                    <li>Ordered list item 1</li>
+                    <li>Ordered list item 2</li>
+                </ol>
+
+                <h3>Forms</h3>
+                <form id="demo-form">
+                    <input type="text" placeholder="Enter text" class="form-input">
+                    <select class="form-input">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- CSS Section -->
+        <section id="css-section">
+            <h2>CSS Styling Demo</h2>
+            <div class="demo-box">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=500&auto=format"
+                        alt="CSS Styling" class="demo-image">
+                </div>
+                <div class="style-demo">
+                    <h3>Interactive Elements</h3>
+                    <div class="box hover-demo">🎨 Hover over me</div>
+                    <div class="box transition-demo">👆 Click me</div>
+                    <div class="box animation-demo">✨ Animation Demo</div>
+                </div>
+
+                <h3>Flexbox Layout</h3>
+                <div class="flex-demo">
+                    <div class="flex-item">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Responsive</h4>
+                        <p>Adapts to screen size</p>
+                    </div>
+                    <div class="flex-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>Stylish</h4>
+                        <p>Modern design</p>
+                    </div>
+                    <div class="flex-item">
+                        <i class="fas fa-magic"></i>
+                        <h4>Interactive</h4>
+                        <p>Engaging elements</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript Section -->
+        <section id="js-section">
+            <h2>JavaScript Interactions Demo</h2>
+            <div class="demo-box">
+                <div class="js-demo"> <button id="counter-btn" class="btn">Click Count: 0</button>
+                    <button id="color-btn" class="btn color-btn">Change Color</button>
+                    <div id="mouse-pos">Mouse Position: X: 0, Y: 0</div>
+                    <input type="text" id="input-demo" placeholder="Type something..." class="form-input">
+                    <p id="input-display">You typed: </p>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
